@@ -3,7 +3,6 @@ import Image from "next/image";
 import { CardProject } from "@/components/card-projects";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
-import { playfairDisplay } from "./fonts/fonts";
 
 const projects = [
   {
@@ -22,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="w-full min-h-screen bg-gray-950">
-      <div className="mt-14 w-full flex flex-col gap-2 items-center justify-center px-8 py-4">
+      <div className="pt-14 w-full flex flex-col gap-2 items-center justify-center px-8 py-4">
         <div className="text-4xl mx-auto font-normal text-neutral-300 dark:text-neutral-400">
           Build
           <FlipWords className="text-blue-300" words={words} /> <br />
