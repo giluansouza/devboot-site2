@@ -20,15 +20,22 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${roboto.className} antialiased`}
       >
-        <header className="w-full flex flex-row gap-2 items-center justify-center bg-gray-500/70 px-8 py-4">
-          <Image src={logoDevboot} alt="devboot logo" width={80} />
-          <Link
-            href="/"
-            className={`${playfairDisplay.className} text-5xl font-bold`}
-          >
-            Devboot
-          </Link>
-          <p className="ml-4 text-xl">
+        <header className="w-full flex flex-col sm:flex-row gap-2 items-center justify-center bg-gray-500/70 px-8 py-4">
+          <div className="flex items-center gap-2">
+            <Image
+              src={logoDevboot}
+              alt="devboot logo"
+              width={80}
+              className="w-8 sm:w-20"
+            />
+            <Link
+              href="/"
+              className={`${playfairDisplay.className} text-3xl sm:text-5xl font-bold`}
+            >
+              Devboot
+            </Link>
+          </div>
+          <p className="sm:ml-4 sm:text-xl">
             | Developed by{" "}
             <Link
               href="https://giluansouza.com.br"
